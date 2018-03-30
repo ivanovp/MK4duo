@@ -24,9 +24,9 @@
  * Here you can define all your custom settings and they will overwrite configurations in the main configuration files.
  */
 
-/*******************************
- *   Firmware Version V4.3.5   *
- *******************************/
+/********************************
+ * Firmware Version V4.3.5      *
+ ********************************/
 
 #define CONFIGURATION_OVERALL
 
@@ -456,7 +456,7 @@
 //#define Y_TWO_STEPPER_DRIVERS
 #define INVERT_Y2_VS_Y_DIR false
 //#define Y_TWO_ENDSTOPS
-//#define Z_TWO_STEPPER_DRIVERS
+#define Z_TWO_STEPPER_DRIVERS
 #define INVERT_Z2_VS_Z_DIR false
 //#define Z_TWO_ENDSTOPS
 //#define XY_FREQUENCY_LIMIT  15
@@ -1104,7 +1104,7 @@
 "Ytwostepper": "0",
 "Y2vsYdir": "0",
 "Ytwoendstop": "0",
-"Ztwostepper": "0",
+"Ztwostepper": "1",
 "Z2vsZdir": "0",
 "Ztwoendstop": "0",
 "extencoder": "0",
@@ -1254,10 +1254,10 @@
   "enable": "ORIG_E1_ENABLE_PIN"
 },
 "Z2motor": {
-  "name": "Extruder 1",
-  "step": "ORIG_E1_STEP_PIN",
-  "dir": "ORIG_E1_DIR_PIN",
-  "enable": "ORIG_E1_ENABLE_PIN"
+  "name": "Extruder 2",
+  "step": "ORIG_E2_STEP_PIN",
+  "dir": "ORIG_E2_DIR_PIN",
+  "enable": "ORIG_E2_ENABLE_PIN"
 },
 "E0motor": {
   "name": "Extruder 0",
